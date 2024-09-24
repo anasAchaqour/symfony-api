@@ -1,0 +1,80 @@
+# config/routes/api_routes.yaml
+
+api_product_index:
+    path: /api/products
+    controller: App\Controller\ProductController::index
+    methods: GET
+
+api_product_create:
+    path: /api/products
+    controller: App\Controller\ProductController::create
+    methods: POST
+
+api_product_show:
+    path: /api/products/{id}
+    controller: App\Controller\ProductController::show
+    methods: GET
+
+api_product_update:
+    path: /api/products/{id}
+    controller: App\Controller\ProductController::update
+    methods: PUT
+
+api_product_delete:
+    path: /api/products/{id}
+    controller: App\Controller\ProductController::delete
+    methods: DELETE
+
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+api_customer_index:
+    path: /api/customers
+    controller: App\Controller\CustomerController::index
+    methods: GET
+
+api_customer_create:
+    path: /api/customers
+    controller: App\Controller\CustomerController::create
+    methods: POST
+
+api_customer_show:
+    path: /api/customers/{id}
+    controller: App\Controller\CustomerController::show
+    methods: GET
+
+api_customer_update:
+    path: /api/customers/{id}
+    controller: App\Controller\CustomerController::update
+    methods: PUT
+
+api_customer_delete:
+    path: /api/customers/{id}
+    controller: App\Controller\CustomerController::delete
+    methods: DELETE
+
+# :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+api_cart_index:
+    path: /api/carts
+    controller: App\Controller\CartController::index
+    methods: GET
+
+api_cart_create:
+    path: /api/carts
+    controller: App\Controller\CartController::create
+    methods: POST
+
+api_cart_show:
+    path: /api/carts/{id}
+    controller: App\Controller\CartController::show
+    methods: GET
+
+api_cart_update:
+    path: /api/carts/{id}
+    controller: App\Controller\CartController::update
+    methods: PUT
+
+api_cart_delete:
+    path: /api/carts/{id}
+    controller: App\Controller\CartController::delete
+    methods: DELETE
